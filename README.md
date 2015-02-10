@@ -44,7 +44,71 @@ complete SDK, please see the [Microsoft Azure .NET Developer Center](http://www.
   - Store
   - SQL Database
 
+Asir/Ram,
+ 
+Tested  following scenarios for CLA Hotfix on Production 
+ 
+1)      CLA should not require if the MS User   creates PR on MS(Legal Entity)
+ 
+
+                https://github.com/contoso-x-production/azure-powershell/pull/24
+
+2)      CLA should not require if the MS User   creates PR on MSOT(Legal Entity)
+https://github.com/contoso-y-production/opencv/pull/23
+
+
+3)      CLA should not require if the MSOT  User   creates PR on MSOT(Legal Entity)
+ 
+
+https://github.com/contoso-y-production/opencv/pull/24
+
+Issues
+
+1)	Need Single Line Break on GitHub PR Comments
+ 
+2)	 Showing Incorrect Employer in Email Comments,If the MS user creates MSOT Repo
+ 
+
+ Clarification on User Table Design: Currently User Table allows Data as below,which looks incorrect.In real world the same UserID should not belongs to MSOT and MS Legal Entities.If it is  valid scenario, Need Composite PrimaryKey on UserTable(Id && ProviderUsername&&LicenseID)
+ 
+
+
+
+Thanks,
+Selva.M
+
+
+Asir/Ram,
+ 
+Tested  following scenarios for CLA Hotfix on Production 
+ 
+1)      CLA should not require if the MS User   creates PR on MS(Legal Entity)
+ 
+
+                https://github.com/contoso-x-production/azure-powershell/pull/24
+
+2)      CLA should not require if the MS User   creates PR on MSOT(Legal Entity)
+https://github.com/contoso-y-production/opencv/pull/23
+
+
+3)      CLA should not require if the MSOT  User   creates PR on MSOT(Legal Entity)
+ 
+
+
+
+
     > Available in the separate [Media Services repository](http://github.com/WindowsAzure/azure-sdk-for-media-services/tree/master/src/net/Client)
+
+- Mobile Services
+
+    > Available in the separate [Mobile Services repository](https://github.com/WindowsAzure/azure-mobile-services)
+
+# Getting started
+
+The complete Microsoft Azure SDK can be downloaded from the [Microsoft Azure Downloads Page](http://www.windowsazure.com/en-us/downloads/?sdk=net) and ships with support for building deployment packages, integrating with tooling, rich command line tooling, and more.
+
+For the best development experience, developers should use the official Microsoft NuGet packages for libraries. NuGet packages are regularly updated with new functionality and hotfixes. 
+Available in the separate [Media Services repository](http://github.com/WindowsAzure/azure-sdk-for-media-services/tree/master/src/net/Client)
 
 - Mobile Services
 
